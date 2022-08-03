@@ -34,6 +34,8 @@ html, body {
 .right-container {
   grid-area: right;
   aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
 }
 
 .gif img {
