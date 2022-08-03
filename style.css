@@ -1,9 +1,8 @@
 :root {
-    --color-bg: #282828;
-    --color-fg: #EADBB2;
-    --color-link: #8F9191;
-    --color-link-visited: #668F8B;
-    --color-link-hover: #FA7921 ;
+    --color-bg: #100e0f;
+    --color-fg: #F0E2F3;
+    --color-title: #b3cbf2;
+    --color-link-hover: #eabbb9;
 }
 
 html, body {
@@ -18,7 +17,7 @@ html, body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 460px 600px 1fr;
+  grid-template-columns: 1fr 600px 460px 1fr;
   grid-template-areas:
     ". left right .";
   column-gap: 80px;
@@ -29,13 +28,12 @@ html, body {
 
 .left-container {
   grid-area: left;
-  aspect-ratio: 1/1;
+  width: 100%;
 }
 
 .right-container {
   grid-area: right;
-  height: 50%;
-  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .gif img {
@@ -44,11 +42,13 @@ html, body {
 }
 
 .head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 40px;
-  padding-top: 60px;
+  text-align: right;
+  padding: 30px 5px;
+}
+
+.head p {
+  margin: 0;
 }
 
 .category {
@@ -65,32 +65,42 @@ html, body {
 .links {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: var(--color-title);
 }
 
 li {
   font-size: 16px;
   list-style-type: none;
-  padding: 5px
+  margin: 5px;
+  width: max-content;
+  margin-left: auto;
+  transition: all .4s;
 }
 
 a:link {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-fg);
 }
 
 a:visited {
-  color: var(--color-link-visited);
+  color: var(--color-fg);
 }
 
-a:hover {
+a:hover{
+  color: inherit;
+}
+
+li:not(:first-child):hover {
   color: var(--color-link-hover);
+  transform: scale(0.95);
+  transition: all .4s; 
 }
 
 .blinking {
