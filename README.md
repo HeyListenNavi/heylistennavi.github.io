@@ -2,7 +2,11 @@
 
 Fork from kencx's startpage
 
-Feel free to fork and make your own changes!
-
 - Font: Fira Code
 - Colorscheme: No idea ;-;
+
+### Changes
+- Added more gifs
+- Changed overall layout of the starpage
+- The gif to display will be now selected randomly
+- Added a nice transition when hovering each bookmark
