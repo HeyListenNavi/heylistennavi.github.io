@@ -1,8 +1,8 @@
 :root {
     --color-bg: #100e0f;
     --color-fg: #F0E2F3;
-    --color-title: #b3cbf2;
-    --color-link-hover: #eabbb9;
+    --color-link-hover: #b3cbf2;
+    --color-title: #eabbb9;
 }
 
 html, body {
@@ -17,7 +17,7 @@ html, body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 600px 460px 1fr;
+  grid-template-columns: 1fr 700px 460px 1fr;
   grid-template-areas:
     ". left right .";
   column-gap: 80px;
@@ -44,19 +44,24 @@ html, body {
 }
 
 .head {
-  font-size: 40px;
+  font-size: 30px;
   text-align: right;
-  padding: 30px 5px;
+  padding: 10px 5px;
 }
 
-.head p {
+.head h1 {
   margin: 0;
+}
+
+.head h2 {
+  font-size: 25px;
+  margin: 20px 0 0 0;
 }
 
 .category {
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 250px;
 }
 
 .bookmarks {
