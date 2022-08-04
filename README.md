@@ -7,6 +7,6 @@ Fork from kencx's startpage
 
 ### Changes
 - Added more gifs
-- Changed overall layout of the starpage
+- Changed overall layout of the startpage
 - The gif to display will be now selected randomly
 - Added a nice transition when hovering each bookmark
